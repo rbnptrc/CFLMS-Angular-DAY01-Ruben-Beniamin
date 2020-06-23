@@ -1,1 +1,53 @@
-<p>contact works!</p>
+<h1>Contact Us</h1>
+<div class="formbox">
+
+
+    <form [formGroup]="info" (ngSubmit)="onSubmit()">
+        <h3>Your Details</h3>
+        <label>
+            First Name:
+            <input type="text" formControlName="firstName">
+        </label>
+        <br>
+        <label>
+            last Name:
+            <input type="text" formControlName="lastName">
+        </label>
+        <br>
+        <label>
+            subject:
+            <input type="text" formControlName="subject">
+        </label>
+        <br>
+        <label>
+            email:
+            <input type="text" formControlName="email">
+        </label>
+
+        <div formGroupName="address">
+            <h3>Address</h3>
+
+            <label>
+                Street:
+                <input type="text" formControlName="street">
+            </label>
+            <br>
+            <label>
+                City:
+                <input type="text" formControlName="city">
+            </label>
+            <br>
+            <label>
+                State:
+                <input type="text" formControlName="state">
+            </label>
+            <br>
+            <label>
+                Zip Code:
+                <input type="text" formControlName="zip">
+            </label>
+        </div>
+        <br><br>
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+</div>
