@@ -1,0 +1,14 @@
+<div class="container d-flex">
+
+    <div class="card-deck">
+        <div class="card" *ngFor="let list of cars">
+            <img class="card-img-top" src={{list.image}} alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{list.brand}}</h5>
+                <li class="card-text">{{list.type}}</li>
+                <li class="card-text">{{list.color}}</li>
+            </div>
+        </div>
+
+    </div>
+</div>
