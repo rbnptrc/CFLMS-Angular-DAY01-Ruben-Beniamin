@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">Ben Cars</a>
+    </div>
+    <span class="container">
+    <ng-template [ngIf]="clickCounter > 10" [ngIfElse]="none">
+        <p><b> V.I.P Option </b></p>
+    </ng-template>
+    <ng-template #none>
+        <p><b>Basic Option</b></p>
+    </ng-template>
+</span>
+    <button (click)="countClick()" type="button" class="btn btn-primary">Donate {{ clickCounter }} €</button>
+
+
+
+</nav>
